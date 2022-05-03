@@ -33,14 +33,23 @@ public class Loops {
         else if (a == 1)
         {
             System.out.println("Please enter the number you would like to square:");
-            int n = scan.nextInt();
-            System.out.println(Math.pow(n,2));
+            int square = scan.nextInt();
+            for (int i = 1;i<2;i++)
+            {
+                square*=square;
+            }
+            System.out.println(square);
         }
         else if (a==2)
         {
             System.out.println("Please enter the number you would like to cube:");
             int b = scan.nextInt();
-            System.out.println(Math.pow(b,3));
+            int extra = b;
+            for (int i = 1;i<3;i++)
+            {
+                b = b*extra;
+            }
+            System.out.println(b);
         }
         else 
         {
@@ -48,7 +57,12 @@ public class Loops {
             int c = scan.nextInt();
             System.out.println("Please enter the exponent:");
             int d = scan.nextInt();
-            System.out.println(Math.pow(c,d));
+            int bread = c;
+            for (int i = 1; i<d; i++)
+            {
+                c = c*bread;
+            }
+            System.out.println(c);
         }
         }
    }   
